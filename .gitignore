@@ -1,0 +1,6 @@
+vendor/*
+.DS_Store*
+.code-workspace
+.idea/*
+composer.lock
+src/master.pid
