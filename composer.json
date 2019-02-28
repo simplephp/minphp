@@ -11,7 +11,7 @@
   "require": {
     "php": ">=7.0.0",
     "ext-swoole": ">=1.9.5",
-    "simplephp/minphp-framework": "1.1.1"
+    "simplephp/minphp-framework": "dev-master"
   },
   "authors": [
     {
