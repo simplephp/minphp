@@ -20,10 +20,5 @@
       "homepage": "https://github.com/simplephp",
       "role": "Developer"
     }
-  ],
-  "autoload": {
-    "psr-4": {
-      "minphp\\": "framework/"
-    }
-  }
+  ]
 }

@@ -8,6 +8,8 @@
  */
 
 define('ROOT_PATH', __DIR__);
+defined('MIN_ENV') or define('MIN_ENV', 'dev');
+
 require ROOT_PATH . '/../vendor/autoload.php';
 $config = require ROOT_PATH . '/../config.php';
 
