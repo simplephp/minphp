@@ -13,6 +13,11 @@
     "ext-swoole": ">=1.9.5",
     "simplephp/minphp-framework": "dev-master"
   },
+  "autoload": {
+    "psr-4": {
+      "app\\": "app/"
+    }
+  },
   "authors": [
     {
       "name": "kevin",

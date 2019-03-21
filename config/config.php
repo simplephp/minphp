@@ -5,7 +5,7 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     // 命令命名空间
-    'commandNamespace' => 'apps\daemon\commands',
+    'commandNamespace' => 'app\daemon\commands',
 
     // 命令
     'commands'         => [
