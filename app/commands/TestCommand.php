@@ -12,20 +12,31 @@ class TestCommand
 {
 
     public function startAction() {
-        go(function() {
-            $cli = new \Swoole\Coroutine\Http\Client('127.0.0.1', 80);
-            $cli->setHeaders([
-                'Host' => "localhost",
-                "User-Agent" => 'Chrome/49.0.2587.3',
-                'Accept' => 'text/html,application/xhtml+xml,application/xml',
-                'Accept-Encoding' => 'gzip',
-            ]);
-            $cli->set([ 'timeout' => 1]);
-            $cli->get('/index.php');
 
-            $cli->close();
-            return [];
-            yield $cli->body;
+        $cli = new \Swoole\Http\Client('https://www.baidu.com', 80);
+        $cli->setHeaders([
+            'Host' => "https://www.baidu.com",
+            "User-Agent" => 'Chrome/49.0.2587.3',
+            'Accept' => 'text/html,application/xhtml+xml,application/xml',
+            'Accept-Encoding' => 'gzip',
+        ]);
+        $cli->set([ 'timeout' => 1]);
+        $cli->get('/', function ($cli) {
+            if($cli->statusCode == 200) {
+                $this->success();
+            } else {
+                $this->fail();
+            }
         });
+        return [];
     }
+
+    public function fail() {
+        var_dump('fail');
+    }
+
+    public function success() {
+        var_dump('success');
+    }
+
 }
