@@ -12,4 +12,5 @@ defined('MIN_ENV') or define('MIN_ENV', 'dev');
 
 require ROOT_PATH . '/vendor/autoload.php';
 $config = require ROOT_PATH . '/config/config.php';
+
 (new min\console\Application($config))->run();

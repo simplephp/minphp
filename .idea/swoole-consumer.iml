@@ -7,10 +7,10 @@
     <orderEntry type="module-library">
       <library name="PHP" type="php">
         <CLASSES>
-          <root url="file://D:/swoole-ide-helper-master" />
+          <root url="file://D:/swoole-ide-helper-master/src" />
         </CLASSES>
         <SOURCES>
-          <root url="file://D:/swoole-ide-helper-master" />
+          <root url="file://D:/swoole-ide-helper-master/src" />
         </SOURCES>
       </library>
     </orderEntry>
