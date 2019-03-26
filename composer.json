@@ -11,7 +11,8 @@
   "require": {
     "php": ">=7.0.0",
     "ext-swoole": ">=1.9.5",
-    "simplephp/minphp-framework": "dev-master"
+    "simplephp/minphp-framework": "dev-master",
+    "jpush/jpush": "*"
   },
   "autoload": {
     "psr-4": {
